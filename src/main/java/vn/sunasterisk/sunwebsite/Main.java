@@ -15,22 +15,25 @@ public class Main {
         us.registerUser("nguyenvand", "123");
         us.registerUser("nguyenvanr", "123");
         us.registerUser("nguyenvanf", "123");
+        System.out.print("nguyenvanw ");
         if(us.login("nguyenvanw","123")){
             System.out.println("Login thành công");
         }else {
             System.out.println("Login thất bại");
         }
+        System.out.print("nguyenvanc ");
         if(us.login("nguyenvanc","123")){
             System.out.println("Login thành công");
         }else {
             System.out.println("Login thất bại");
         }
-        if(us.login("nguyenvanc","123")){
+        System.out.print("nguyenvand ");
+        if(us.login("nguyenvand","123")){
             System.out.println("Login thành công");
         }else {
             System.out.println("Login thất bại");
         }
-
+        System.out.println("Danh sách memnber trong UserService");
         for (UserDto u : us.getListUser()){
             System.out.println(u);
         }
